@@ -43,8 +43,8 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     # if you want add sns. please message!
     enableTwitterShare = true  # new add
     enableFacebookShare = true # new add
-    enableHatenaShare = true   # new add
-    enableLineShare = true     # new add
+    enableHatenaShare = false   # new add
+    enableLineShare = false     # new add
     enableLinkedInShare = true # new add
 
     thumbnail = "images/tn.png" # default sns thumbnail
@@ -57,22 +57,12 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/naro143/"
-[[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    weight = 2
-    url = "https://twitter.com/naro143/"
+    url = "https://github.com/nightlord189"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
     weight = 3
-    url = "https://www.linkedin.com/in/naro143/"
-[[params.social]]
-    # If icon is not set, Text is displayed.
-    name = "LinkedIn"
-    weight = 4
-    url = "https://www.linkedin.com/in/naro143/"
+    url = "https://www.linkedin.com/in/nightlord189/"
 
 # Menu links
 [[menu.main]]
@@ -83,3 +73,50 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
     name = "About"
     weight = 2
     url = "about"
+
+[languages]
+    [languages.en]
+        languagename = "English" # The language name to be displayed in the selector.
+        title = "Alexey Buravov"
+
+        # You can configure the theme parameter for each language. 
+        [languages.en.params]
+        author = "Alexey Buravov"
+        info = "Software developer"
+        description = "Yusuke Ishimi's personal website"
+        keywords = "blog,developer,personal"
+
+        [languages.en.menu] # It is possible to change the menu too.
+
+        [[languages.en.menu.main]]
+        name = "About"
+        weight = 1.0
+        url = "about"
+
+        [[languages.en.menu.main]]
+        name = "Blog"
+        weight = 2.0
+        url = "posts"
+
+
+    [languages.ru]
+        languagename = "Russian"
+        title = "Алексей Буравов"
+
+        [languages.ru.params]
+            author = "Алексей Буравов"
+            description = "Персональная страничка"
+            keywords = "blog,developer,software"
+            info = "Разработчик"
+
+        [languages.ru.menu]
+
+            [[languages.ru.menu.main]]
+            name = "О себе"
+            weight = 1.0
+            url = "ru/about"
+
+            [[languages.ru.menu.main]]
+            name = "Блог"
+            weight = 2.0
+            url = "ru/posts"
