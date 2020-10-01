@@ -5,7 +5,8 @@
     <link>https://nightlord189.github.io/</link>
     <description>Recent content on Alexey Buravov</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://nightlord189.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Oct 2020 04:04:45 +0600</lastBuildDate><atom:link href="https://nightlord189.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contacts</title>
       <link>https://nightlord189.github.io/contact/</link>
@@ -36,6 +37,15 @@ email2: night.lord.189@gmail.com</description>
       
       <guid>https://nightlord189.github.io/about/</guid>
       <description>Software developer from Almaty, Kazakhstan.</description>
+    </item>
+    
+    <item>
+      <title>Initial</title>
+      <link>https://nightlord189.github.io/posts/initial/</link>
+      <pubDate>Thu, 01 Oct 2020 04:04:45 +0600</pubDate>
+      
+      <guid>https://nightlord189.github.io/posts/initial/</guid>
+      <description></description>
     </item>
     
   </channel>

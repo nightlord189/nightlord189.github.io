@@ -39,6 +39,7 @@
   
   <url>
     <loc>https://nightlord189.github.io/</loc>
+    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -49,6 +50,16 @@
                 hreflang="en"
                 href="https://nightlord189.github.io/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/posts/initial/</loc>
+    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/posts/</loc>
+    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
   </url>
   
   <url>
