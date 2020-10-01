@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Алексей Буравов</title>
-    <link>https://nightlord189.github.io/ru/</link>
+    <link>http://nldevelop.com/ru/</link>
     <description>Recent content on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://nightlord189.github.io/ru/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="http://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Контакты</title>
-      <link>https://nightlord189.github.io/ru/contact/</link>
+      <link>http://nldevelop.com/ru/contact/</link>
       <pubDate>Thu, 01 Oct 2020 16:47:47 +0600</pubDate>
       
-      <guid>https://nightlord189.github.io/ru/contact/</guid>
+      <guid>http://nldevelop.com/ru/contact/</guid>
       <description>email: night.lord@nlgmail.com
 email2: night.lord.189@gmail.com</description>
     </item>
     
     <item>
       <title>РЕЗЮМЕ</title>
-      <link>https://nightlord189.github.io/ru/cv/</link>
+      <link>http://nldevelop.com/ru/cv/</link>
       <pubDate>Thu, 01 Oct 2020 09:07:52 +0600</pubDate>
       
-      <guid>https://nightlord189.github.io/ru/cv/</guid>
+      <guid>http://nldevelop.com/ru/cv/</guid>
       <description>Опыт работы Halyk Bank
  Разработчик Август 2019 – настоящее время Микросервисы, процессы для менеджеров (депозиты, товарный кредит), код-ревью. Golang, Camunda BPM, .NET.Core  Samgau
  Разработчик Апрель 2019 – Июль 2019 портал AlmatyKSK, Бюджет участия, телеграм-боты .NET.Core  SoftLink
