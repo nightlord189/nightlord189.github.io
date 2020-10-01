@@ -98,6 +98,20 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
         weight = 2.0
         url = "posts"
 
+        [[languages.en.menu.main]]
+        name = "Projects"
+        weight = 3.0
+        url = "projects"
+
+        [[languages.en.menu.main]]
+        name = "Contacts"
+        weight = 4.0
+        url = "contact"
+
+        [[languages.en.menu.main]]
+        name = "CV"
+        weight = 1.5
+        url = "cv"
 
     [languages.ru]
         languagename = "Russian"
@@ -120,3 +134,18 @@ disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
             name = "Блог"
             weight = 2.0
             url = "ru/posts"
+
+            [[languages.ru.menu.main]]
+            name = "Проекты"
+            weight = 3.0
+            url = "projects"
+
+            [[languages.ru.menu.main]]
+            name = "Контакты"
+            weight = 4.0
+            url = "contact"
+
+            [[languages.ru.menu.main]]
+            name = "Резюме"
+            weight = 1.5
+            url = "cv"
