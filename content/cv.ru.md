@@ -1,50 +1,65 @@
 ---
-title: "Резюме"
+title: "РЕЗЮМЕ"
 date: 2020-10-01T09:07:52+06:00
-draft: true
+draft: false
 ---
 
-### Work experience
+### Опыт работы
 **Halyk Bank**
-+ Software developer
-+ August 2019 – until now
-+ Development of backend microservises, BPM-processes (Camunda BPM engine), code-review.
++ Разработчик
++ Август 2019 – настоящее время
++ Микросервисы, процессы для менеджеров (депозиты, товарный кредит), код-ревью.
++ Golang, Camunda BPM, .NET.Core
 
 **Samgau**
-+ Software developer
-+ April 2019 – July 2019
-+ AlmatyKSK portal and other information systems.
++ Разработчик
++ Апрель 2019 – Июль 2019
++ портал AlmatyKSK, [Бюджет участия](https://budget.open-almaty.kz/), телеграм-боты
++ .NET.Core
 
 **SoftLink**
-+ TeamLead
-+ May 2018 – March 2019
-+ VR and AR pojects on Unity, developed server-side on Python and websockets.
++ Тимлид
++ Май 2018 – Март 2019
++ [BCC AR](https://play.google.com/store/apps/details?id=kz.bcc.ar&hl=ru),  [Uchet.kz AR](https://apps.apple.com/kz/app/uchet-kz-ar/id1451897051), ЭКСПО 2018 VR, Казпочта Голосовой ассистент
++ Unity (C#), Python (Sanic)
 
 **Gamestudio316**
-+ Software developer
-+ January 2017 – April 2018
-+ Single-player and online games. Unity (C#), Java (Netty, Jetty). Releases in Google Play, App Store, Aptoide, work with in-app purchases and ads services (Unity Ads, AdMob, Appodeal).
++ Разработчик
++ Январь 2017 – Апрель 2018
++ [Azi Card Game](https://play.google.com/store/apps/details?id=com.gudgame.azicardclub)
++ Unity (C#), Java (Netty, Jetty)
 
 **Singularity Lab**
-+ Software developer
-+ October 2015 – December 2016
-+ Interactive museum of the company EmbaMunayGaz (Technologies: Unity, Unreal Engine). Games and applications for VR and AR on Unreal Engine 4, VR-game in Steam shop.
++ Разработчик
++ Октябрь 2015 – Декабрь 2016
++ Интерактивный музей ЭмбаМунайГаз, Machine Learning (Steam), [JetX VR](https://store.steampowered.com/app/684620/JetX_VR/)
++ Unity (C#), Unreal Engine (Blueprint, C++)
 
-### Education
-**IITU**
-+ Master
-+ August 2020
-+ Project Management
+### Образование
+**МУИТ**
++ Магистр
++ Август 2020
++ Управление проектами
 
-**AUPET**
-+ Bachelor
-+ May 2017
-+ Space technics and technologies
+**АУЭС**
++ Бакалавр
++ Май 2017
++ Космическая техника и технологии
 
 
-### Skills and technologies
+### Навыки и технологии
 + Golang
 + C# (.NET.Core)
++ JavaScript (in progress)
 + PostgreSQL, MySQL
 + Unity
 + Unreal Engine
+
+### Курсы и сертификаты
++ [Golang - основы языка](https://www.coursera.org/account/accomplishments/verify/BZEGTBC7SAAB)
++ [Введение в Linux](https://stepik.org/cert/337675)
++ [Ассистент менеджера проектов](http://spmrk.kz/kz-sertification/certified)
+
+### Статьи
++ [Сравнительный анализ датасетов для оценки параметров
+проектов по разработке программного обеспечения](http://www.colloquium-journal.org/wp-content/uploads/2020/04/colloquium-journal-1062-chast-1.pdf)

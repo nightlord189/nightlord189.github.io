@@ -8,27 +8,32 @@ draft: false
 **Halyk Bank**
 + Software developer
 + August 2019 – until now
-+ Development of backend microservises, BPM-processes (Camunda BPM engine), code-review.
++ Backend microservises, processes for managers (deposits, commodity credit), code-review.
++ Golang, Camunda BPM, .NET.Core
 
 **Samgau**
 + Software developer
 + April 2019 – July 2019
-+ AlmatyKSK portal and other information systems.
++ AlmatyKSK portal, [OpenVote](https://budget.open-almaty.kz/), telegram-bots
++ .NET.Core
 
 **SoftLink**
 + TeamLead
 + May 2018 – March 2019
-+ VR and AR pojects on Unity, developed server-side on Python and websockets.
++ [BCC AR](https://play.google.com/store/apps/details?id=kz.bcc.ar&hl=ru),  [Uchet.kz AR](https://apps.apple.com/kz/app/uchet-kz-ar/id1451897051), Expo 2018 VR, KazPost Voice Assistant
++ Unity (C#), Python (Sanic)
 
 **Gamestudio316**
 + Software developer
 + January 2017 – April 2018
-+ Single-player and online games. Unity (C#), Java (Netty, Jetty). Releases in Google Play, App Store, Aptoide, work with in-app purchases and ads services (Unity Ads, AdMob, Appodeal).
++ [Azi Card Game](https://play.google.com/store/apps/details?id=com.gudgame.azicardclub)
++ Unity (C#), Java (Netty, Jetty)
 
 **Singularity Lab**
 + Software developer
 + October 2015 – December 2016
-+ Interactive museum of the company EmbaMunayGaz (Technologies: Unity, Unreal Engine). Games and applications for VR and AR on Unreal Engine 4, VR-game in Steam shop.
++ EmbaMunayGaz interactive museum. Machine Learning (Steam), [JetX VR](https://store.steampowered.com/app/684620/JetX_VR/)
++ Unity (C#), Unreal Engine (Blueprint, C++)
 
 ### Education
 **IITU**
@@ -45,6 +50,15 @@ draft: false
 ### Skills and technologies
 + Golang
 + C# (.NET.Core)
++ JavaScript (in progress)
 + PostgreSQL, MySQL
 + Unity
 + Unreal Engine
+
+### Certificates and courses
++ [Golang language basics](https://www.coursera.org/account/accomplishments/verify/BZEGTBC7SAAB)
++ [Linux introduction](https://stepik.org/cert/337675)
++ [Project Manager's assistant](http://spmrk.kz/kz-sertification/certified)
+
+### Articles
++ [Comparative analysis of datasets for evaluating parameters of software development projects](http://www.colloquium-journal.org/wp-content/uploads/2020/04/colloquium-journal-1062-chast-1.pdf)
