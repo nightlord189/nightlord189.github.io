@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alexey Buravov</title>
+    <link>https://nightlord189.github.io/</link>
+    <description>Recent content on Alexey Buravov</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://nightlord189.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contacts</title>
+      <link>https://nightlord189.github.io/contact/</link>
+      <pubDate>Thu, 01 Oct 2020 16:47:40 +0600</pubDate>
+      
+      <guid>https://nightlord189.github.io/contact/</guid>
+      <description>email: night.lord@nlgmail.com
+email2: night.lord.189@gmail.com</description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>https://nightlord189.github.io/cv/</link>
+      <pubDate>Thu, 01 Oct 2020 09:07:52 +0600</pubDate>
+      
+      <guid>https://nightlord189.github.io/cv/</guid>
+      <description>Work experience Halyk Bank
+ Software developer August 2019 – until now Backend microservises, processes for managers (deposits, commodity credit), code-review. Golang, Camunda BPM, .NET.Core  Samgau
+ Software developer April 2019 – July 2019 AlmatyKSK portal, OpenVote, telegram-bots .NET.Core  SoftLink
+ TeamLead May 2018 – March 2019 BCC AR, Uchet.kz AR, Expo 2018 VR, KazPost Voice Assistant Unity (C#), Python (Sanic)  Gamestudio316
+ Software developer January 2017 – April 2018 Azi Card Game Unity (C#), Java (Netty, Jetty)  Singularity Lab</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://nightlord189.github.io/about/</link>
+      <pubDate>Thu, 01 Oct 2020 04:07:06 +0600</pubDate>
+      
+      <guid>https://nightlord189.github.io/about/</guid>
+      <description>Software developer from Almaty, Kazakhstan.</description>
+    </item>
+    
+  </channel>
+</rss>

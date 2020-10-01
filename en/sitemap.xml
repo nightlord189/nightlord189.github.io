@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://nightlord189.github.io/contact/</loc>
+    <lastmod>2020-10-01T16:47:40+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nightlord189.github.io/ru/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nightlord189.github.io/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/cv/</loc>
+    <lastmod>2020-10-01T09:07:52+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nightlord189.github.io/ru/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nightlord189.github.io/cv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/about/</loc>
+    <lastmod>2020-10-01T04:07:06+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nightlord189.github.io/ru/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nightlord189.github.io/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nightlord189.github.io/ru/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nightlord189.github.io/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nightlord189.github.io/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nightlord189.github.io/ru/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nightlord189.github.io/tags/"
+                />
+  </url>
+  
+</urlset>
