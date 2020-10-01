@@ -1,7 +1,7 @@
 ---
-title: "CV"
+title: "Резюме"
 date: 2020-10-01T09:07:52+06:00
-draft: false
+draft: true
 ---
 
 ### Work experience

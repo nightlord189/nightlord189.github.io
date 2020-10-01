@@ -56,7 +56,7 @@
       <div class="content">
         {{ block "content" . }}{{ end }}
       </div>
-      {{ if or (.Site.Params.fixedbarContent) (.Site.Params.snsShare)}}
+      {{ if or (.Site.Params.fixedbarContent) (.Site.Params.snsShareFooter)}}
         {{ partial "footer.html" . }}
       {{ end }}
     </main>
