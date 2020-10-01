@@ -1,5 +1,5 @@
-baseurl = "http://www.example.com" # Hostname (and path) to the root.
-title = "Yusuke Ishimi" # Site title.
+baseurl = "https://nightlord189.github.io" # Hostname (and path) to the root.
+title = "Alexey Buravov" # Site title.
 theme = "coder-portfolio" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en" # The default content language.
@@ -16,9 +16,9 @@ pygmentsUseClasses = true # new add
 disqusShortname = "yourdiscussshortname" # Enable or disable Disqus.
 
 [params] # theme parameters
-    author = "Yusuke Ishimi" # Author's name.
-    info = "WEB AND APPS ENGINEER" # Author's job title or info.
-    description = "Yusuke Ishimi's personal website" # Site description.
+    author = "Alexey Buravov" # Author's name.
+    info = "Software developer" # Author's job title or info.
+    description = "Alexey Buravov's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
     avatarurl = "images/avatar.jpg" # Contain the path of the optionnal avatar in the static folder.
 
