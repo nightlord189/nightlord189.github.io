@@ -35,6 +35,16 @@
   <url>
     <loc>https://nldevelop.com/about/</loc>
     <lastmod>2020-10-01T05:07:06+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/about/"
+                />
   </url>
   
   <url>

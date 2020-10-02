@@ -29,5 +29,14 @@ email2: night.lord.189@gmail.com</description>
  Разработчик Январь 2017 – Апрель 2018 Azi Card Game Unity (C#), Java (Netty, Jetty)  Singularity Lab</description>
     </item>
     
+    <item>
+      <title>О себе</title>
+      <link>https://nldevelop.com/ru/about/</link>
+      <pubDate>Thu, 01 Oct 2020 09:02:17 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/about/</guid>
+      <description>Разработчик программного обеспечения из Алматы, Казахстан.</description>
+    </item>
+    
   </channel>
 </rss>
