@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Алексей Буравов</title>
-    <link>http://nldevelop.com/ru/categories/</link>
+    <link>https://nldevelop.com/ru/categories/</link>
     <description>Recent content in Categories on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://nldevelop.com/ru/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://nldevelop.com/ru/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

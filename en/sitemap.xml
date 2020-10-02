@@ -3,90 +3,90 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://nldevelop.com/contact/</loc>
+    <loc>https://nldevelop.com/contact/</loc>
     <lastmod>2020-10-01T16:47:40+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://nldevelop.com/ru/contact/"
+                href="https://nldevelop.com/ru/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nldevelop.com/contact/"
+                href="https://nldevelop.com/contact/"
                 />
   </url>
   
   <url>
-    <loc>http://nldevelop.com/cv/</loc>
+    <loc>https://nldevelop.com/cv/</loc>
     <lastmod>2020-10-01T09:07:52+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://nldevelop.com/ru/cv/"
+                href="https://nldevelop.com/ru/cv/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nldevelop.com/cv/"
+                href="https://nldevelop.com/cv/"
                 />
   </url>
   
   <url>
-    <loc>http://nldevelop.com/about/</loc>
+    <loc>https://nldevelop.com/about/</loc>
     <lastmod>2020-10-01T05:07:06+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://nldevelop.com/</loc>
+    <loc>https://nldevelop.com/</loc>
     <lastmod>2020-10-01T04:04:45+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://nldevelop.com/ru/"
+                href="https://nldevelop.com/ru/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nldevelop.com/"
+                href="https://nldevelop.com/"
                 />
   </url>
   
   <url>
-    <loc>http://nldevelop.com/posts/initial/</loc>
+    <loc>https://nldevelop.com/posts/initial/</loc>
     <lastmod>2020-10-01T04:04:45+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://nldevelop.com/posts/</loc>
+    <loc>https://nldevelop.com/posts/</loc>
     <lastmod>2020-10-01T04:04:45+06:00</lastmod>
   </url>
   
   <url>
-    <loc>http://nldevelop.com/categories/</loc>
+    <loc>https://nldevelop.com/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://nldevelop.com/ru/categories/"
+                href="https://nldevelop.com/ru/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nldevelop.com/categories/"
+                href="https://nldevelop.com/categories/"
                 />
   </url>
   
   <url>
-    <loc>http://nldevelop.com/tags/</loc>
+    <loc>https://nldevelop.com/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="http://nldevelop.com/ru/tags/"
+                href="https://nldevelop.com/ru/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="http://nldevelop.com/tags/"
+                href="https://nldevelop.com/tags/"
                 />
   </url>
   

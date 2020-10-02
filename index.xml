@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alexey Buravov</title>
-    <link>http://nldevelop.com/</link>
+    <link>https://nldevelop.com/</link>
     <description>Recent content on Alexey Buravov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2020 04:04:45 +0600</lastBuildDate><atom:link href="http://nldevelop.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 04:04:45 +0600</lastBuildDate><atom:link href="https://nldevelop.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contacts</title>
-      <link>http://nldevelop.com/contact/</link>
+      <link>https://nldevelop.com/contact/</link>
       <pubDate>Thu, 01 Oct 2020 16:47:40 +0600</pubDate>
       
-      <guid>http://nldevelop.com/contact/</guid>
+      <guid>https://nldevelop.com/contact/</guid>
       <description>email: night.lord@nlgmail.com
 email2: night.lord.189@gmail.com</description>
     </item>
     
     <item>
       <title>CV</title>
-      <link>http://nldevelop.com/cv/</link>
+      <link>https://nldevelop.com/cv/</link>
       <pubDate>Thu, 01 Oct 2020 09:07:52 +0600</pubDate>
       
-      <guid>http://nldevelop.com/cv/</guid>
+      <guid>https://nldevelop.com/cv/</guid>
       <description>Work experience Halyk Bank
  Software developer August 2019 – until now Backend microservises, processes for managers (deposits, commodity credit), code-review. Golang, Camunda BPM, .NET.Core  Samgau
  Software developer April 2019 – July 2019 AlmatyKSK portal, OpenVote, telegram-bots .NET.Core  SoftLink
@@ -32,19 +32,19 @@ email2: night.lord.189@gmail.com</description>
     
     <item>
       <title>About</title>
-      <link>http://nldevelop.com/about/</link>
+      <link>https://nldevelop.com/about/</link>
       <pubDate>Thu, 01 Oct 2020 05:07:06 +0600</pubDate>
       
-      <guid>http://nldevelop.com/about/</guid>
+      <guid>https://nldevelop.com/about/</guid>
       <description>Software developer from Almaty, Kazakhstan.</description>
     </item>
     
     <item>
       <title>Initial</title>
-      <link>http://nldevelop.com/posts/initial/</link>
+      <link>https://nldevelop.com/posts/initial/</link>
       <pubDate>Thu, 01 Oct 2020 04:04:45 +0600</pubDate>
       
-      <guid>http://nldevelop.com/posts/initial/</guid>
+      <guid>https://nldevelop.com/posts/initial/</guid>
       <description></description>
     </item>
     
