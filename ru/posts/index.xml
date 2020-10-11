@@ -6,7 +6,17 @@
     <description>Recent content in Posts on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 11 Oct 2020 21:38:16 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Oct 2020 01:28:55 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Будущее платформ онлайн-образования</title>
+      <link>https://nldevelop.com/ru/posts/elearning/</link>
+      <pubDate>Mon, 12 Oct 2020 01:28:55 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/elearning/</guid>
+      <description>Периодически прохожу курсы на платформе Udemy, но у них есть существенный минус - почти нет практических заданий, только видеокурсы.
+Думаю, будущее за той платформой, которая позволит преподавателю быстро создавать практические задания не только в формате тестов, но и в формате автоматических проверок кода по типу Hexlet (пишешь код по задаче прямо в браузере, отправляешь на проверку, автоматические тесты проверяет, удовлетворяет ли твой код тестам).</description>
+    </item>
+    
     <item>
       <title>Фронтенд с человеческим лицом</title>
       <link>https://nldevelop.com/ru/posts/human-frontend/</link>
