@@ -5,7 +5,18 @@
     <link>https://nldevelop.com/ru/</link>
     <description>Recent content on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Oct 2020 21:38:16 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Фронтенд с человеческим лицом</title>
+      <link>https://nldevelop.com/ru/posts/human-frontend/</link>
+      <pubDate>Sun, 11 Oct 2020 21:38:16 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/human-frontend/</guid>
+      <description>Тут я бы хотел просто процитировать этот великолепный комментарий, который полностью поддерживаю. Особенно про вывод значений из поиска и перехват ошибок http-запросов.
+ Ключевое правило: Дайте пользователю поля ввода и не суйте в них рыло! Ничего так не бесит пользователя, как ваши «сверхценные» действия, мешающие ему, например, залогиниться или вбить строку в поиск. Засуньте в жопу свои куки. Не спрашивайте из какого он города — могли бы, скоты, уже запомнить: загляните в свою жопу, там где куки, и подумайте зачем они вам, если хранятся только до конца сессии.</description>
+    </item>
+    
     <item>
       <title>Контакты</title>
       <link>https://nldevelop.com/ru/contact/</link>

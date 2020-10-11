@@ -70,6 +70,16 @@
   <url>
     <loc>https://nldevelop.com/posts/</loc>
     <lastmod>2020-10-01T04:04:45+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/posts/"
+                />
   </url>
   
   <url>
