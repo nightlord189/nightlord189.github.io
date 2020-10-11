@@ -32,7 +32,7 @@ draft: false
 **Singularity Lab**
 + Разработчик
 + Октябрь 2015 – Декабрь 2016
-+ Интерактивный музей ЭмбаМунайГаз, Machine Learning (Steam), [JetX VR](https://store.steampowered.com/app/684620/JetX_VR/)
++ [Интерактивный музей ЭмбаМунайГаз](https://singularity.kz/our-work/interaktivnyij-muzej-ao-embamunajgaz), [Machine Learning](https://store.steampowered.com/app/524030/Machine_Learning_Episode_I/), [JetX VR](https://store.steampowered.com/app/684620/JetX_VR/)
 + Unity (C#), Unreal Engine (Blueprint, C++)
 
 ### Образование
