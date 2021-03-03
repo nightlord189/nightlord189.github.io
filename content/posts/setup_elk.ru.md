@@ -69,7 +69,7 @@ elasticsearch.password: "<password>"
 http://host:9200
 и Kibana:
 http://host:5601
-4. Сохраняем тестовый документ (не забываем выставить Basic Auth, если включили авторизацию):
+4. Сохраняем тестовый документ (не забываем выставить Basic Auth, если включили авторизацию):  
 POST http://host:9200/company/employee/1/_create 
 ```
 {
