@@ -6,7 +6,18 @@
     <description>Recent content on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 12 Oct 2020 01:28:55 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 04 Mar 2021 13:55:09 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Установка ELK</title>
+      <link>https://nldevelop.com/ru/posts/setup-elk/</link>
+      <pubDate>Thu, 04 Mar 2021 13:55:09 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/setup-elk/</guid>
+      <description>Поднял я тут на днях для своих проектов ElasticSearch + Kibana на VPS, так что запишу сюда, что делал и что получилось.
+Цель изначально была - начать переписывать один мой проект, который давно поддерживаю. Но с чего начать чистый лист нового бэкенда? Конечно с логов! А куда сейчас логируют модные посоны? В Elastic.
+Сперва я поднял все это дело локально на Windows 10 в Docker. И оно поднялось и заработало! Правда, выжрало немало так RAM и я впервые увидел потребление 15/16 гб на ноуте.</description>
+    </item>
+    
     <item>
       <title>Будущее платформ онлайн-образования</title>
       <link>https://nldevelop.com/ru/posts/elearning/</link>
