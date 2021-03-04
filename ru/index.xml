@@ -6,7 +6,19 @@
     <description>Recent content on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Mar 2021 13:55:09 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 Mar 2021 01:14:29 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Экзамены и срезы в классическом образовании</title>
+      <link>https://nldevelop.com/ru/posts/exams/</link>
+      <pubDate>Fri, 05 Mar 2021 01:14:29 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/exams/</guid>
+      <description>Решил сформулировать тут свои некие правила проведения срезов, экзаменов и вообще любых проверок.
+ Правило 1: тест должен составляться так, что если ты прослушал все (или большинство) лекций хотя бы по одному разу, то тест либо экзамен ты должен сдавать на 90%, не задумываясь (не особо напрягая мозг и память).
+ Пример плохого вопроса, не соответствующего этому правилу (предположим, речь идет о курсе по основам HTTP-протокола):
+1. Какое назначение у статус-кода 425:</description>
+    </item>
+    
     <item>
       <title>Установка ELK</title>
       <link>https://nldevelop.com/ru/posts/setup-elk/</link>
