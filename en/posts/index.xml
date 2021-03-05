@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Alexey Buravov</title>
-    <link>https://nldevelop.com/posts/</link>
+    <link>https://nldevelop.com/en/posts/</link>
     <description>Recent content in Posts on Alexey Buravov</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Oct 2020 04:04:45 +0600</lastBuildDate><atom:link href="https://nldevelop.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 04:04:45 +0600</lastBuildDate><atom:link href="https://nldevelop.com/en/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Initial</title>
-      <link>https://nldevelop.com/posts/initial/</link>
+      <link>https://nldevelop.com/en/posts/initial/</link>
       <pubDate>Thu, 01 Oct 2020 04:04:45 +0600</pubDate>
       
-      <guid>https://nldevelop.com/posts/initial/</guid>
+      <guid>https://nldevelop.com/en/posts/initial/</guid>
       <description></description>
     </item>
     
