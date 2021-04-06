@@ -1,8 +1,8 @@
 baseurl = "https://nldevelop.com/" # Hostname (and path) to the root.
 title = "Alexey Buravov" # Site title.
 theme = "coder-portfolio" # Set the theme.
-languagecode = "en" # The site’s language code used to generate RSS.
-defaultcontentlanguage = "en" # The default content language.
+languagecode = "ru" # The site’s language code used to generate RSS.
+defaultcontentlanguage = "ru" # The default content language.
 defaultContentLanguageInSubdir = true
 
 publishDir = "docs"
@@ -21,7 +21,7 @@ disqusShortname = "nldevelop" # Enable or disable Disqus.
     info = "Software developer" # Author's job title or info.
     description = "Alexey Buravov's personal website" # Site description.
     keywords = "blog,developer,personal" # Site keywords.
-    avatarurl = "images/avatar2.jpg" # Contain the path of the optionnal avatar in the static folder.
+    avatarurl = "images/avatar3.jpg" # Contain the path of the optionnal avatar in the static folder.
 
     footercontent = "Enter a text here." # Add footer content
     fixedbarContent = "" # Add fixedbar content
