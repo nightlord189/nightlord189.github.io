@@ -51,16 +51,17 @@ description = ""
  ```
 sudo nano /etc/ssh/sshd_config
  ```
-Ищем строку "#Port 22", и меняем ее на "Port 8906". 
-
-10. Нужно также запретить подключение под root-пользователем. Для этого в том же файле ищем строку "PermitRootLogin yes" и меняем ее на "PermitRootLogin no".
-
- ![](/images/posts/setup-ssh-postgresql/07ssh.jpg)
-
+Ищем строку "#Port 22", и меняем ее на "Port 8906".   
 Затем сохраняем файл:   
 * Ctrl+O (запись файла)  
 * Enter (подтверждение)  
 * Ctrl+X (закрыть редактор)
+
+10. Нужно также запретить подключение под root-пользователем. Для этого в том же файле ищем строку "PermitRootLogin yes" и меняем ее на "PermitRootLogin no".
+
+ ![](/images/posts/setup-ssh-postgresql/07ssh.jpg)  
+
+Затем сохраняем файл аналогично пункту 9.
 
 **Не забываем**, что подключаться нужно уже по новому указанному нами порту!
 
@@ -87,7 +88,7 @@ sudo -u postgres psql postgres
 sudo nano /etc/postgresql/12/main/postgresql.conf
 ```
 
-Меняем в редакторе строку "#listen_addresses = 'localhost'" на "listen_addresses = '*'". Сохраняем файл аналогично пункту 10.
+Меняем в редакторе строку "#listen_addresses = 'localhost'" на "listen_addresses = '*'". Сохраняем файл аналогично пункту 9.
 Затем перезапускаем PostgreSQL, чтобы обновленные настройки вступили в действие:
 
 ```
@@ -108,7 +109,7 @@ host    all     all     ::/0    md5
 ```
 ![](/images/posts/setup-ssh-postgresql/09psql.jpg)
 
-Сохраняем файл аналогично пункту 10 и перезапускаем PostgreSQL аналогично пункту 13.
+Сохраняем файл аналогично пункту 9 и перезапускаем PostgreSQL аналогично пункту 13.
 
 
 15. Теперь можно подключаться с вашего клиента БД. Я использую [DBeaver](https://dbeaver.io):
@@ -141,4 +142,4 @@ sudo nano /etc/postgresql/12/main/postgresql.conf
 ```
 
 Меняем строку "data_directory = '/var/lib/postgresql/12/main'" на "data_directory = '/mnt/volume-hel1-1/postgresql/12/main'"
-Сохраняем файл аналогично пункту 10 и перезапускаем PostgreSQL аналогично пункту 13.
+Сохраняем файл аналогично пункту 9 и перезапускаем PostgreSQL аналогично пункту 13.
