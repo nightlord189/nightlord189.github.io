@@ -5,6 +5,16 @@
   <url>
     <loc>https://nldevelop.com/ru/posts/</loc>
     <lastmod>2021-04-06T00:32:32+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/posts/"
+                />
   </url>
   
   <url>
@@ -55,21 +65,46 @@
   <url>
     <loc>https://nldevelop.com/ru/contact/</loc>
     <lastmod>2020-10-01T16:47:47+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/contact/"
+                />
   </url>
   
   <url>
     <loc>https://nldevelop.com/ru/cv/</loc>
     <lastmod>2020-10-01T09:07:52+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/cv/"
+                />
   </url>
   
   <url>
     <loc>https://nldevelop.com/ru/about/</loc>
     <lastmod>2020-10-01T09:02:17+06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nldevelop.com/ru/posts/initial/</loc>
-    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/about/"
+                />
   </url>
   
   <url>

@@ -3,7 +3,53 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://nldevelop.com/en/contact/</loc>
+    <lastmod>2020-10-01T16:47:40+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/contact/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/contact/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nldevelop.com/en/cv/</loc>
+    <lastmod>2020-10-01T09:07:52+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/cv/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/cv/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nldevelop.com/en/about/</loc>
+    <lastmod>2020-10-01T05:07:06+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/about/"
+                />
+  </url>
+  
+  <url>
     <loc>https://nldevelop.com/en/</loc>
+    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
@@ -13,6 +59,26 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://nldevelop.com/en/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://nldevelop.com/en/posts/initial/</loc>
+    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nldevelop.com/en/posts/</loc>
+    <lastmod>2020-10-01T04:04:45+06:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ru"
+                href="https://nldevelop.com/ru/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://nldevelop.com/en/posts/"
                 />
   </url>
   
