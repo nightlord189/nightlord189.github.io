@@ -166,17 +166,18 @@ usermod -aG sudo user1
 <li>Поменяем порт SSH с 22 на какой-нибудь другой, например, 8906 (т.к. практически сразу после заведения VPS нас начинают сканить боты и пытаться взломать пароль брутфорсом через дефолтный 22 порт). Для этого откроем конфиг SSH через</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo nano /etc/ssh/sshd_config
-</code></pre></div><p>Ищем строку &ldquo;#Port 22&rdquo;, и меняем ее на &ldquo;Port 8906&rdquo;.</p>
-<ol start="10">
-<li>Нужно также запретить подключение под root-пользователем. Для этого в том же файле ищем строку &ldquo;PermitRootLogin yes&rdquo; и меняем ее на &ldquo;PermitRootLogin no&rdquo;.</li>
-</ol>
-<p><img src="/images/posts/setup-ssh-postgresql/07ssh.jpg" alt=""></p>
-<p>Затем сохраняем файл:</p>
+</code></pre></div><p>Ищем строку &ldquo;#Port 22&rdquo;, и меняем ее на &ldquo;Port 8906&rdquo;.<br>
+Затем сохраняем файл:</p>
 <ul>
 <li>Ctrl+O (запись файла)</li>
 <li>Enter (подтверждение)</li>
 <li>Ctrl+X (закрыть редактор)</li>
 </ul>
+<ol start="10">
+<li>Нужно также запретить подключение под root-пользователем. Для этого в том же файле ищем строку &ldquo;PermitRootLogin yes&rdquo; и меняем ее на &ldquo;PermitRootLogin no&rdquo;.</li>
+</ol>
+<p><img src="/images/posts/setup-ssh-postgresql/07ssh.jpg" alt=""></p>
+<p>Затем сохраняем файл аналогично пункту 9.</p>
 <p><strong>Не забываем</strong>, что подключаться нужно уже по новому указанному нами порту!</p>
 <h3 id="установка-и-настройка-postgresql">Установка и настройка PostgreSQL</h3>
 <ol start="11">
@@ -196,7 +197,7 @@ sudo apt install postgresql postgresql-contrib
 <li>Для возможности подключения извне осталось разрешить это в конфигах:</li>
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo nano /etc/postgresql/12/main/postgresql.conf
-</code></pre></div><p>Меняем в редакторе строку &ldquo;#listen_addresses = &lsquo;localhost&rsquo;&rdquo; на &ldquo;listen_addresses = &lsquo;*'&rdquo;. Сохраняем файл аналогично пункту 10.
+</code></pre></div><p>Меняем в редакторе строку &ldquo;#listen_addresses = &lsquo;localhost&rsquo;&rdquo; на &ldquo;listen_addresses = &lsquo;*'&rdquo;. Сохраняем файл аналогично пункту 9.
 Затем перезапускаем PostgreSQL, чтобы обновленные настройки вступили в действие:</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo systemctl restart postgresql
 </code></pre></div><ol start="14">
@@ -208,7 +209,7 @@ sudo apt install postgresql postgresql-contrib
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">host    all     all     0.0.0.0/0       md5
 host    all     all     ::/0    md5
 </code></pre></div><p><img src="/images/posts/setup-ssh-postgresql/09psql.jpg" alt=""></p>
-<p>Сохраняем файл аналогично пункту 10 и перезапускаем PostgreSQL аналогично пункту 13.</p>
+<p>Сохраняем файл аналогично пункту 9 и перезапускаем PostgreSQL аналогично пункту 13.</p>
 <ol start="15">
 <li>Теперь можно подключаться с вашего клиента БД. Я использую <a href="https://dbeaver.io">DBeaver</a>:</li>
 </ol>
@@ -232,7 +233,7 @@ sudo rsync -av /var/lib/postgresql /mnt/volume-hel1-1/
 </ol>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo nano /etc/postgresql/12/main/postgresql.conf
 </code></pre></div><p>Меняем строку &ldquo;data_directory = &lsquo;/var/lib/postgresql/12/main&rsquo;&rdquo; на &ldquo;data_directory = &lsquo;/mnt/volume-hel1-1/postgresql/12/main&rsquo;&rdquo;
-Сохраняем файл аналогично пункту 10 и перезапускаем PostgreSQL аналогично пункту 13.</p>
+Сохраняем файл аналогично пункту 9 и перезапускаем PostgreSQL аналогично пункту 13.</p>
 
   </article>
 
