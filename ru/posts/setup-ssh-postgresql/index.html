@@ -16,10 +16,10 @@
     <meta property="og:description" content="">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://nldevelop.com/ru/posts/setup-ssh-postgresql/">
-    <meta property="og:image" content="https://nldevelop.com/images/tn.png">
+    <meta property="og:image" content="https://nldevelop.com//images/tn.png">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://nldevelop.com/ru/posts/setup-ssh-postgresql/">
-    <meta name="twitter:image" content="https://nldevelop.com/images/tn.png">
+    <meta name="twitter:image" content="https://nldevelop.com//images/tn.png">
 
     <base href="https://nldevelop.com/ru/posts/setup-ssh-postgresql/">
     <title>
@@ -129,24 +129,24 @@
 </li>
 <li>
 <p>Заходим в кабинет Cloud, выбираем дефолтный проект или создаем новый:
-<img src="images/posts/setup-ssh-postgresql/01projects.jpg" alt=""></p>
+<img src="/images/posts/setup-ssh-postgresql/01projects.jpg" alt=""></p>
 </li>
 <li>
 <p>Нажимаем &ldquo;Add Server&rdquo;, настраиваем нужную конфигурацию (расположение, ОС, тип, volume, название и др.).
 В моем примере я выбираю CX11 (2.49 евро) в Хельсинки на Ubuntu 20.04, без SSH-ключа.
-<img src="images/posts/setup-ssh-postgresql/02buy.jpg" alt=""></p>
+<img src="/images/posts/setup-ssh-postgresql/02buy.jpg" alt=""></p>
 </li>
 <li>
 <p>Сразу настроим volume (в следующих шагах настроим, чтобы данные БД хранились на нем, что обеспечит легкое масштабирование). В разделе Volume кликаем на &ldquo;Create Volume&rdquo;, настраиваем размер:
-<img src="images/posts/setup-ssh-postgresql/03buyvolume.jpg" alt=""></p>
+<img src="/images/posts/setup-ssh-postgresql/03buyvolume.jpg" alt=""></p>
 </li>
 <li>
 <p>После создания volume кликаем на &ldquo;Create &amp; buy now&rdquo; и ожидаем в консоли, пока создастся наш VPS:
-<img src="images/posts/setup-ssh-postgresql/04created.jpg" alt=""></p>
+<img src="/images/posts/setup-ssh-postgresql/04created.jpg" alt=""></p>
 </li>
 <li>
 <p>После завершения создания вам на почтовый адрес должно прийти письмо с данными для подключения:
-<img src="images/posts/setup-ssh-postgresql/05mail.jpg" alt=""></p>
+<img src="/images/posts/setup-ssh-postgresql/05mail.jpg" alt=""></p>
 </li>
 </ol>
 <h3 id="безопасность-и-настройка-ssh">Безопасность и настройка SSH</h3>
@@ -155,7 +155,7 @@
 <li>Для начала подключимся к нашему VPS по SSH. Я предпочитаю работать через MobaXterm, но есть много других аналогов - просто bash, Putty, десятки их (<a href="https://ruprogi.ru/software/mobaxterm">можно посмотреть тут</a>). Хостом будет адрес, указанный в поле IPv4 в письме, портом - 22, протокол SSH.</li>
 </ol>
 <p>После подключения вводим логин root и пароль из письма. Сразу после подключения система затребует от вас сменить пароль, что правильно:</p>
-<p><img src="images/posts/setup-ssh-postgresql/06connect.jpg" alt=""></p>
+<p><img src="/images/posts/setup-ssh-postgresql/06connect.jpg" alt=""></p>
 <ol start="8">
 <li>Создадим нового пользователя (т.к. под рутом подключаться и работать не следует):</li>
 </ol>
@@ -170,7 +170,7 @@ usermod -aG sudo user1
 <ol start="10">
 <li>Нужно также запретить подключение под root-пользователем. Для этого в том же файле ищем строку &ldquo;PermitRootLogin yes&rdquo; и меняем ее на &ldquo;PermitRootLogin no&rdquo;.</li>
 </ol>
-<p><img src="images/posts/setup-ssh-postgresql/07ssh.jpg" alt=""></p>
+<p><img src="/images/posts/setup-ssh-postgresql/07ssh.jpg" alt=""></p>
 <p>Затем сохраняем файл:</p>
 <ul>
 <li>Ctrl+O (запись файла)</li>
@@ -191,7 +191,7 @@ sudo apt install postgresql postgresql-contrib
 \password postgres
 #вводим пароль
 \q
-</code></pre></div><p><img src="images/posts/setup-ssh-postgresql/08psql.jpg" alt=""></p>
+</code></pre></div><p><img src="/images/posts/setup-ssh-postgresql/08psql.jpg" alt=""></p>
 <ol start="13">
 <li>Для возможности подключения извне осталось разрешить это в конфигах:</li>
 </ol>
@@ -207,19 +207,19 @@ sudo apt install postgresql postgresql-contrib
 </code></pre></div><p>Нужно добавить в конец файла две строки (разделение табами):</p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">host    all     all     0.0.0.0/0       md5
 host    all     all     ::/0    md5
-</code></pre></div><p><img src="images/posts/setup-ssh-postgresql/09psql.jpg" alt=""></p>
+</code></pre></div><p><img src="/images/posts/setup-ssh-postgresql/09psql.jpg" alt=""></p>
 <p>Сохраняем файл аналогично пункту 10 и перезапускаем PostgreSQL аналогично пункту 13.</p>
 <ol start="15">
 <li>Теперь можно подключаться с вашего клиента БД. Я использую DBeaver:</li>
 </ol>
-<p><img src="images/posts/setup-ssh-postgresql/10connect_db.jpg" alt=""></p>
+<p><img src="/images/posts/setup-ssh-postgresql/10connect_db.jpg" alt=""></p>
 <p>Далее уже можно создавать новых пользователей, базы данных, настраивать таблицы и др.</p>
 <h3 id="монтирование-volume">Монтирование volume</h3>
 <p>Пункты 16-18 нужны только если вы собираетесь хранить данные на отдельном volume для удобства и безопасности данных.</p>
 <ol start="16">
 <li>Примонтируем volume на сервере. Для того чтобы посмотреть нужные команды, можно в веб-интерфейсе на volume нажать кнопку &ldquo;Show configuration&rdquo;:</li>
 </ol>
-<p><img src="images/posts/setup-ssh-postgresql/11mnt.jpg" alt=""></p>
+<p><img src="/images/posts/setup-ssh-postgresql/11mnt.jpg" alt=""></p>
 <div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback">mkdir /mnt/volume-hel1-1
 mount -o discard,defaults /dev/disk/by-id/scsi-0HC_Volume_10478560 /mnt/volume-hel1-1
 </code></pre></div><ol start="17">
