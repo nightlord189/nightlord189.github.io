@@ -5,7 +5,7 @@ title = "Настройка SSH и установка PostgreSQL на VPS"
 slug = "" 
 tags = []
 categories = []
-thumbnail = "images/tn.png"
+thumbnail = "/images/tn.png"
 description = ""
 +++
 
@@ -16,20 +16,20 @@ description = ""
 1. Регистрируемся на (https://www.hetzner.com).
 
 2. Заходим в кабинет Cloud, выбираем дефолтный проект или создаем новый:
-![](images/posts/setup-ssh-postgresql/01projects.jpg)
+![](/images/posts/setup-ssh-postgresql/01projects.jpg)
 
 3. Нажимаем "Add Server", настраиваем нужную конфигурацию (расположение, ОС, тип, volume, название и др.).
 В моем примере я выбираю CX11 (2.49 евро) в Хельсинки на Ubuntu 20.04, без SSH-ключа. 
-![](images/posts/setup-ssh-postgresql/02buy.jpg)
+![](/images/posts/setup-ssh-postgresql/02buy.jpg)
 
 4. Сразу настроим volume (в следующих шагах настроим, чтобы данные БД хранились на нем, что обеспечит легкое масштабирование). В разделе Volume кликаем на "Create Volume", настраиваем размер:
-![](images/posts/setup-ssh-postgresql/03buyvolume.jpg)
+![](/images/posts/setup-ssh-postgresql/03buyvolume.jpg)
 
 5. После создания volume кликаем на "Create & buy now" и ожидаем в консоли, пока создастся наш VPS:
- ![](images/posts/setup-ssh-postgresql/04created.jpg)
+ ![](/images/posts/setup-ssh-postgresql/04created.jpg)
 
 6. После завершения создания вам на почтовый адрес должно прийти письмо с данными для подключения:
- ![](images/posts/setup-ssh-postgresql/05mail.jpg)
+ ![](/images/posts/setup-ssh-postgresql/05mail.jpg)
 
 ### Безопасность и настройка SSH
 Да, я в курсе, что лучше настраивать доступ по SSH-ключу. Но в данном листинге я это не рассматриваю.
@@ -38,7 +38,7 @@ description = ""
 
 После подключения вводим логин root и пароль из письма. Сразу после подключения система затребует от вас сменить пароль, что правильно:
 
- ![](images/posts/setup-ssh-postgresql/06connect.jpg)
+ ![](/images/posts/setup-ssh-postgresql/06connect.jpg)
 
  8. Создадим нового пользователя (т.к. под рутом подключаться и работать не следует):
  ```
@@ -55,7 +55,7 @@ sudo nano /etc/ssh/sshd_config
 
 10. Нужно также запретить подключение под root-пользователем. Для этого в том же файле ищем строку "PermitRootLogin yes" и меняем ее на "PermitRootLogin no".
 
- ![](images/posts/setup-ssh-postgresql/07ssh.jpg)
+ ![](/images/posts/setup-ssh-postgresql/07ssh.jpg)
 
 Затем сохраняем файл:   
 * Ctrl+O (запись файла)  
@@ -79,7 +79,7 @@ sudo -u postgres psql postgres
 #вводим пароль
 \q
 ```
-![](images/posts/setup-ssh-postgresql/08psql.jpg)
+![](/images/posts/setup-ssh-postgresql/08psql.jpg)
 
 13. Для возможности подключения извне осталось разрешить это в конфигах:
 
@@ -106,14 +106,14 @@ sudo nano /etc/postgresql/12/main/pg_hba.conf
 host    all     all     0.0.0.0/0       md5
 host    all     all     ::/0    md5
 ```
-![](images/posts/setup-ssh-postgresql/09psql.jpg)
+![](/images/posts/setup-ssh-postgresql/09psql.jpg)
 
 Сохраняем файл аналогично пункту 10 и перезапускаем PostgreSQL аналогично пункту 13.
 
 
 15. Теперь можно подключаться с вашего клиента БД. Я использую DBeaver:
 
-![](images/posts/setup-ssh-postgresql/10connect_db.jpg)
+![](/images/posts/setup-ssh-postgresql/10connect_db.jpg)
 
 Далее уже можно создавать новых пользователей, базы данных, настраивать таблицы и др.
 
@@ -122,7 +122,7 @@ host    all     all     ::/0    md5
 
 16. Примонтируем volume на сервере. Для того чтобы посмотреть нужные команды, можно в веб-интерфейсе на volume нажать кнопку "Show configuration":
 
-![](images/posts/setup-ssh-postgresql/11mnt.jpg)
+![](/images/posts/setup-ssh-postgresql/11mnt.jpg)
 
 ```
 mkdir /mnt/volume-hel1-1
