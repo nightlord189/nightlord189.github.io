@@ -59,6 +59,7 @@ draft: false
 + [Golang - основы языка](https://www.coursera.org/account/accomplishments/verify/BZEGTBC7SAAB)
 + [Введение в Linux](https://stepik.org/cert/337675)
 + [Ассистент менеджера проектов](http://spmrk.kz/kz-sertification/certified)
++ [AWS Cloud Practitioner] (https://www.credly.com/badges/055bf61c-d85d-496d-9712-3546852c6f08?source=nldevelop.com)
 
 ### Статьи
 + [Сравнительный анализ датасетов для оценки параметров
