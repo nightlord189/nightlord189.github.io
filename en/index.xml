@@ -24,9 +24,7 @@
       <guid>https://nldevelop.com/en/cv/</guid>
       <description>Work experience Halyk Bank
  Software developer August 2019 – until now Backend microservises, processes for managers (deposits, commodity credit), code-review. Golang, Camunda BPM, .NET.Core  Samgau
- Software developer April 2019 – July 2019 AlmatyKSK portal, OpenVote, telegram-bots .NET.Core  SoftLink
- TeamLead May 2018 – March 2019 BCC AR, Uchet.kz AR, Expo 2018 VR, KazPost Voice Assistant Unity (C#), Python (Sanic)  Gamestudio316
- Software developer January 2017 – April 2018 Azi Card Game Unity (C#), Java (Netty, Jetty)  Singularity Lab</description>
+ Software developer April 2019 – July 2019 Participated in the development and support of the Almaty-KSK portal for the integration of residents, KSK and city administration into a single system. Worked on OpenVote portal. Developed Telegram bots for integration with Almaty-KSK. .NET.Core, PostgreSQL, Telegram API  SoftLink</description>
     </item>
     
     <item>
@@ -35,7 +33,8 @@
       <pubDate>Thu, 01 Oct 2020 05:07:06 +0600</pubDate>
       
       <guid>https://nldevelop.com/en/about/</guid>
-      <description>Software developer from Almaty, Kazakhstan.</description>
+      <description>Software developer from Almaty, Kazakhstan.
+Simplier is better.</description>
     </item>
     
     <item>

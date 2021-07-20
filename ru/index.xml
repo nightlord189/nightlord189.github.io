@@ -88,10 +88,8 @@
       
       <guid>https://nldevelop.com/ru/cv/</guid>
       <description>Опыт работы Halyk Bank
- Разработчик Август 2019 – настоящее время Микросервисы, процессы для менеджеров (депозиты, товарный кредит), код-ревью. Golang, Camunda BPM, .NET.Core  Samgau
- Разработчик Апрель 2019 – Июль 2019 портал AlmatyKSK, Бюджет участия, телеграм-боты .NET.Core  SoftLink
- Тимлид Май 2018 – Март 2019 BCC AR, Uchet.kz AR, ЭКСПО 2018 VR, Казпочта Голосовой ассистент Unity (C#), Python (Sanic)  Gamestudio316
- Разработчик Январь 2017 – Апрель 2018 Azi Card Game Unity (C#), Java (Netty, Jetty)  Singularity Lab</description>
+ Разработчик Август 2019 – настоящее время Микросервисы, процессы для менеджеров (депозиты, товарный кредит), код-ревью. Golang, Camunda BPM, .NET.Core, PostgreSQL  Samgau
+ Разработчик Апрель 2019 – Июль 2019 Участвовал в разработке и поддержке портала Almaty-KSK для интеграции жителей, КСК и городской администрации в единую систему. Принимал участие в разработке портала Бюджет участия Разработал Telegram-боты для интеграции с Almaty-KSK, а также получения адреса избирательного участка. .NET.Core, PostgreSQL, Telegram API  SoftLink</description>
     </item>
     
     <item>
@@ -100,7 +98,8 @@
       <pubDate>Thu, 01 Oct 2020 09:02:17 +0600</pubDate>
       
       <guid>https://nldevelop.com/ru/about/</guid>
-      <description>Разработчик программного обеспечения из города Алматы, Казахстан.</description>
+      <description>Разработчик программного обеспечения из города Алматы, Казахстан.
+Проще - лучше.</description>
     </item>
     
   </channel>
