@@ -5,3 +5,5 @@ draft: false
 ---
 
 Software developer from Almaty, Kazakhstan.
+
+*Simplier is better.*
