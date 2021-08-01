@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Алексей Буравов">
+    <meta name="description" content="https://nldevelop.com/">
+    <meta name="keywords" content="blog,developer,software">
+
+    <meta property="og:site_name" content="Алексей Буравов">
+    <meta property="og:title" content="
+  Проще - лучше - Алексей Буравов
+">
+    <meta property="og:description" content="нытье по поводу абстракций">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nldevelop.com/ru/posts/kiss/">
+    <meta property="og:image" content="https://nldevelop.com/images/tn.png">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="https://nldevelop.com/ru/posts/kiss/">
+    <meta name="twitter:image" content="https://nldevelop.com/images/tn.png">
+
+    <base href="https://nldevelop.com/ru/posts/kiss/">
+    <title>
+  Проще - лучше - Алексей Буравов
+</title>
+
+    <link rel="canonical" href="https://nldevelop.com/ru/posts/kiss/">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700">
+    <link rel="stylesheet" href="/css/normalize.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+    
+      <link rel="alternate" href="https://nldevelop.com/ru/index.xml" type="application/rss+xml" title="Алексей Буравов">
+      <link href="https://nldevelop.com/ru/index.xml" rel="feed" type="application/rss+xml" title="Алексей Буравов" />
+    
+
+    <meta name="generator" content="Hugo 0.75.1" />
+  </head>
+
+  <body class="">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/ru/">Алексей Буравов</a>
+    <input type="checkbox" id="menu-control"/>
+    <label class="menu-mobile  float-right " for="menu-control">
+      <span class="btn-mobile  float-right ">&#9776;</span>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nldevelop.com/ru/about">О себе</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nldevelop.com/ru/cv">Резюме</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nldevelop.com/ru/posts">Блог</a>
+            </li>
+          
+            <li class="navigation-item  align-center ">
+              <a class="navigation-link" href="https://nldevelop.com/ru/contact">Контакты</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            <li class= " mobile-menu-lang-separator-centered ">
+              <hr />
+            </li>
+          
+          
+            
+          
+            
+              
+                
+                  <li class="multilingual-separator">
+                    <p>|</p>
+                  </li>
+                
+                
+              
+              <li class="navigation-item  align-center ">
+                <a href="https://nldevelop.com/en/">English</a>
+              </li>
+            
+          
+        
+      </ul>
+    </label>
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Проще - лучше</h1>
+      <h2 class="date">August 2, 2021</h2>
+
+      
+    </header>
+
+    <p>Хочу тут привести пару своих мыслей по поводу усложнения и увеличения абстракций в программировании, а также использования разных технологий.</p>
+<p>Я последнее время начинаю думать, что лучше писать максимально &ldquo;дубово&rdquo; и просто, чем наворачивать кучу слоев абстракций в надежде на будущую универсализацию. А также всегда обязательно думать головой и не переусложнять без нужды.
+Пойдем по пунктам. Примеры буду приводить на Go, т.к. больше пишу на нем, но в той или иной степени это касается любого языка.</p>
+<h5 id="1-нужно-отделять-интерфейс-от-реализации">1. Нужно отделять интерфейс от реализации!</h5>
+<p><em><strong>Так как так универсальнее/пишут в умных статьях/я типа клевый программист/еще какое-то оправдание.</strong></em><br>
+Мой ответ - <strong>нет</strong>. Не нужно. Если быть точнее, создавать интерфейс нужно только тогда, когда у вас:</p>
+<ul>
+<li>есть две или больше сущности с одинаковыми методами, но разной реализацией</li>
+<li>требуется делать подмену реализации для юнит-тестов</li>
+<li>есть какой-то Dependency Injection с обязательным использованием интерфейсов</li>
+</ul>
+<p>Если ни один из этих пунктов еще не работает - не надо впиливать интерфейс заранее! Пожалуйста. Он серьезно замедляет чтение и понимаение вашего кода другим разработчиком, а бонусов никаких не приносит.</p>
+<p>Поясню на примере, что я имею в виду. Вот запилили мы прекрасную сущность JsonReader с методом Parse, который принимает на вход имя файла, а на выходе возвращает некую map (словарь в go) из него:</p>
+<div class="highlight"><pre class="chroma"><code class="language-Go" data-lang="Go"><span class="kd">type</span> <span class="nx">JsonReader</span> <span class="kd">struct</span> <span class="p">{</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="p">(</span><span class="nx">r</span> <span class="nx">JsonReader</span><span class="p">)</span> <span class="nf">Parse</span><span class="p">(</span><span class="nx">filename</span> <span class="kt">string</span><span class="p">)</span> <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}</span> <span class="p">{</span>
+	<span class="c1">//do something
+</span><span class="c1"></span>	<span class="k">return</span> <span class="kc">nil</span>
+<span class="p">}</span>
+</code></pre></div><p>Так вот - если у вас <strong>прямо сейчас</strong> нет каких-нибудь YamlReader, IniReader, XmlReader, SomeFormatReader и вы никак не подменяете JsonReader в тестах - не надо лепить сюда еще и интерфейс Reader типа такого:</p>
+<div class="highlight"><pre class="chroma"><code class="language-Go" data-lang="Go"><span class="kd">type</span> <span class="nx">Reader</span> <span class="kd">interface</span> <span class="p">{</span>
+	<span class="nf">Parse</span><span class="p">(</span><span class="nx">filename</span> <span class="kt">string</span><span class="p">)</span> <span class="kd">map</span><span class="p">[</span><span class="kt">string</span><span class="p">]</span><span class="kd">interface</span><span class="p">{}</span>
+<span class="p">}</span>
+</code></pre></div><p>Пусть останется JsonReader-ом до появления своих &ldquo;братьев&rdquo;. Так будет лучше для всех - и для вас, когда вы через полгода вновь откроете проект и для вашего коллеги, который откроет проект через год после вашего ухода. И проект можно просматривать в блокноте без необходимости через F12 прыгать по реализациям.</p>
+<p>На самом деле в этом плане меня сильно расстраивает .NET.Core, т.к. в нем контроллеры, сервисы и т.д. вы просто обязаны делать интерфейсами, иначе не будет работать встроенный DI.</p>
+<h5 id="2-а-давайте-сделаем-возможность-в-любой-момент-менять-базу-данных">2. А давайте сделаем возможность в любой момент менять базу данных!</h5>
+<p><em><strong>С postgres на mysql, oracle, mongo&hellip;</strong></em><br>
+Только один вопрос - сколько раз в своей жизни вам приходилось менять СУБД в уже работающем проекте?
+Мне - ровно ноль.</p>
+<p>Обычно под этим соусом делают лишний слой абстракций, который инкапсулирует в себе работу с БД. Но так как БД вы менять не будете (а если будете - все равно вылезет куча нюансов и проблем, так что переписывать часть проекта и так придется) - этот код пылится мертвым грузом и опять же ухудшает читаемость проекта для всех, кто его открывает.</p>
+<p>Я не предлагаю вызывать методы конкретного фреймворка или библиотеки прямо в контроллере (так же как и писать SQL-запросы там), т.е. я считаю нормальным вынести какой-нибудь метод типа GetItem отдельно в другой пакет, внутри которого уже будет вызываться БД напрямую:</p>
+<div class="highlight"><pre class="chroma"><code class="language-Go" data-lang="Go"><span class="kd">type</span> <span class="nx">Item</span> <span class="kd">struct</span> <span class="p">{</span>
+	<span class="nx">ID</span>   <span class="kt">int</span>
+	<span class="nx">Name</span> <span class="kt">string</span>
+	<span class="nx">Text</span> <span class="kt">string</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">GetItem</span><span class="p">(</span><span class="nx">id</span> <span class="kt">int</span><span class="p">)</span> <span class="o">*</span><span class="nx">Item</span> <span class="p">{</span>
+	<span class="nx">item</span> <span class="o">:=</span> <span class="nx">orm</span><span class="p">.</span><span class="nf">GetBySQL</span><span class="p">(</span><span class="s">&#34;SELECT * FROM items WHERE id=?&#34;</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span>
+	<span class="k">return</span> <span class="nx">item</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">GetItemHandler</span><span class="p">(</span><span class="nx">c</span> <span class="o">*</span><span class="nx">someHttp</span><span class="p">.</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">id</span> <span class="o">:=</span> <span class="nx">c</span><span class="p">.</span><span class="nf">Param</span><span class="p">(</span><span class="s">&#34;id&#34;</span><span class="p">)</span>
+	<span class="nx">item</span> <span class="o">:=</span> <span class="nx">service</span><span class="p">.</span><span class="nf">GetItem</span><span class="p">(</span><span class="nx">id</span><span class="p">)</span>
+	<span class="nx">c</span><span class="p">.</span><span class="nf">JSON</span><span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="nx">item</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div><p>Но я против того, чтобы мы делали некий полиморфизм для разных БД внутри этого метода GetItem:</p>
+<div class="highlight"><pre class="chroma"><code class="language-Go" data-lang="Go"><span class="kd">func</span> <span class="nf">GetItem</span><span class="p">(</span><span class="nx">id</span> <span class="kt">int</span><span class="p">)</span> <span class="o">*</span><span class="nx">Item</span> <span class="p">{</span>
+	<span class="k">switch</span> <span class="nx">provider</span><span class="p">.</span><span class="nx">DbType</span> <span class="p">{</span>
+	<span class="k">case</span> <span class="s">&#34;postgresql&#34;</span><span class="p">:</span>
+		<span class="k">return</span> <span class="nx">ps</span><span class="p">.</span><span class="nf">GetBySQL</span><span class="p">(</span><span class="s">&#34;SELECT * FROM items WHERE id=?&#34;</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span>
+	<span class="k">case</span> <span class="s">&#34;otherdb&#34;</span><span class="p">:</span>
+		<span class="k">return</span> <span class="nx">otherdb</span><span class="p">.</span><span class="nf">GetBySQL</span><span class="p">(</span><span class="s">&#34;SELECT * FROM items WHERE id=?&#34;</span><span class="p">,</span> <span class="nx">id</span><span class="p">)</span>
+	<span class="p">}</span>
+	<span class="nb">panic</span><span class="p">(</span><span class="s">&#34;unknown db&#34;</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div><h5 id="3-юнит-тесты-и-тесты-вообще">3. Юнит-тесты! (и тесты вообще)</h5>
+<p><em><strong>Ведь мы же топовые пацаны и должны писать тесты с большим покрытием, как везде говорят!</strong></em><br>
+Тут у меня две позиции, начну с первой.</p>
+<p><strong>3.1 Что дают юнит-тесты и не лучше ли писать другой вид тестов?</strong> По сути юнит-тестами мы проверяем только то, что наш модуль/функция/класс работают так, как мы запланировали, при изолированном окружении.
+Т.е. вот пишем мы метод расчета какой-нибудь суммы для клиента, которая принимает на вход три параметра, а на выходе выдает один.
+Пишем юнит-тест для нее и для всех аналогичных функций. Все отлично, ~90% покрытие, вы великолепны.
+А потом на проде где-нибудь приходит неожиданный ответ от другого сервиса на вход и все отваливается.
+Либо вам нужно переделать эту функцию на две разных с разным набором параметров, и нужно в дополнение к коду переписывать еще и тесты.</p>
+<p>В общем, я веду к тому, что юнит-тесты не дают нам практически никаких бонусов в итоге, а лишь одни минусы. Вот серьезно, ну написал я функцию с ошибкой в том, что при определенном наборе входных параметров у меня где-то будет паника или деление на 0. А при этом такой набор вообще невозможен исходя из логики сервиса? Не пофиг ли, какие там ошибки внутри в реализации, если на всем множестве кейсов <strong>весь сервис</strong> отрабатывает корректно и деление на 0 не вызывается никогда?</p>
+<p>Но из этого не следует, что не нужно писать тесты. Нужно, но они должны тестировать <strong>весь сервис как черный ящик</strong>, а не одну функцию как модуль или черный ящик.</p>
+<p>Т.е. если я пишу сервис с одним GET-методом, который принимает на вход id записи в базе и возвращает ее в JSON, я должен написать тесты, которые проверяют, например:</p>
+<ul>
+<li>что при наличии записи в БД с таким id она возвращается наружу</li>
+<li>что при отсутствии записии в БД возвращается ошибка</li>
+<li>что при некорректном id на входе возвращается ошибка.</li>
+</ul>
+<p><strong>Все. Это все. Я не должен тратить свое время на тестирование того, что где-то там во внутренностях сервиса ничего не делится на 0 и не падает при отсутствии конфига/инстанса БД.</strong><br>
+Как называются эти тесты? Я без понятия, вероятно, интеграционные :)</p>
+<p><strong>3.2 Когда можно вообще не писать тесты?</strong> Если мы примерно или точно рассчитали стоимость и необходимость написания и поддержки тестов и решаем, что скорость разработки на данном конкретном этапе жизненного цикла проекта важнее.
+Т.е. если мы разрабатываем сервис для нового стартапа, у которого уже есть конкуренты и скорость выхода на рынок/реализации новых фич критична, а количество багов и потери репутации/средств из-за них не столь существенны - то есть смысл на какое-то время не тратить время на написание тестов, да, как это ни ужасно.</p>
+<p>Если же мы не спеша релизим новые фичи для сервиса международных переводов, у нас три конкурента-мастодонта, а на каждую небольшую ошибку поднимается вой в СМИ нескольких стран/штрафы/потери денег/отток клиентов - то тут действительно есть смысл написать тесты по-максимуму на все участки, чтобы сократить количество ошибок.</p>
+<p><strong>Нужно выбирать правильную стратегию и думать головой, а не слепо следовать модным веяниям и тенденциям</strong></p>
+<h5 id="4-http-для-передачи-данных-между-микросервисами-слишком-медленныйнеудобныйстарыйнемодный-давайте-будем-отправлять-все-по-grpc-с-protobuf">4. HTTP для передачи данных между микросервисами слишком медленный/неудобный/старый/немодный, давайте будем отправлять все по gRPC с protobuf!</h5>
+<p>На мой взгляд, менять HTTP как протокол на что-то другое следует только когда:</p>
+<ul>
+<li>запросы от клиента до конечного сервиса идут слишком долго из-за слишком большого количества вызовов по пути</li>
+<li>данных передается очень много и экономия (в деньгах!) при их упаковке может принести больше $1000 в месяц</li>
+</ul>
+<p>Поясню свою позицию. HTTP разработан достаточно давно и сейчас его поддерживает практически все. Дебажить его достаточно просто, а посмотреть, что же там все-таки у нас уходит куда-то или приходит откуда-то - тоже проще простого. С переходом на другой протокол вы теряете эту роскошь и часть контроля над происходящим. А также новые сервисы разрабатывать уже чуть сложнее, + к технологиям, которые надо знать, чтобы вообще начать работать с вашим проектом.
+Если вас и ваших клиентов устраивает скорость работы и объем передаваемых данных - то не нужно ничего менять.</p>
+<h4 id="продолжение">Продолжение</h4>
+<p>следует</p>
+
+  </article>
+
+  <br/>
+
+  
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nldevelop" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
+</section>
+
+      </div>
+      
+    </main>
+
+    
+
+  <script src="/js/app.js"></script>
+  
+  </body>
+</html>

@@ -6,7 +6,33 @@
     <description>Recent content on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Tue, 06 Apr 2021 00:32:32 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 02 Aug 2021 01:08:18 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Проще - лучше</title>
+      <link>https://nldevelop.com/ru/posts/kiss/</link>
+      <pubDate>Mon, 02 Aug 2021 01:08:18 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/kiss/</guid>
+      <description>Хочу тут привести пару своих мыслей по поводу усложнения и увеличения абстракций в программировании, а также использования разных технологий.
+Я последнее время начинаю думать, что лучше писать максимально &amp;ldquo;дубово&amp;rdquo; и просто, чем наворачивать кучу слоев абстракций в надежде на будущую универсализацию. А также всегда обязательно думать головой и не переусложнять без нужды. Пойдем по пунктам. Примеры буду приводить на Go, т.к. больше пишу на нем, но в той или иной степени это касается любого языка.</description>
+    </item>
+    
+    <item>
+      <title>Console tips &amp; tricks</title>
+      <link>https://nldevelop.com/ru/posts/console-tips/</link>
+      <pubDate>Sun, 01 Aug 2021 23:05:42 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/console-tips/</guid>
+      <description>Буду дополнять сюда разные очевидные и не очень консольные команды, которые использую/использовал.
+Docker сборка образа: docker build -t user/some.service:latest .
+push в registry: docker push user/some.service:latest
+pull: docker pull user/some.service:latest
+запуск: docker run -d -p 3001:3000 &amp;ndash;restart always &amp;ndash;name some.service user/some.service:latest
+remove all images: docker rmi $(docker images -q)
+Сборка заменить значение в json-файле (предварительно нужно установить утилиту jq):
+contents=&amp;quot;$(jq &amp;lsquo;.Key.Key2 = &amp;ldquo;value&amp;rdquo;&amp;rsquo; file.json)&amp;quot; &amp;amp;&amp;amp; \echo &amp;ldquo;${contents}&amp;rdquo; &amp;gt; file.json</description>
+    </item>
+    
     <item>
       <title>Настройка SSH и установка PostgreSQL на VPS</title>
       <link>https://nldevelop.com/ru/posts/setup-ssh-postgresql/</link>

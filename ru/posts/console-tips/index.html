@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="author" content="Алексей Буравов">
-    <meta name="description" content="Персональная страничка">
+    <meta name="description" content="https://nldevelop.com/">
     <meta name="keywords" content="blog,developer,software">
 
     <meta property="og:site_name" content="Алексей Буравов">
     <meta property="og:title" content="
-  Posts - Алексей Буравов
+  Console tips &amp; tricks - Алексей Буравов
 ">
-    <meta property="og:description" content="Персональная страничка">
+    <meta property="og:description" content="пополняемый сборник моих консольных команд">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://nldevelop.com/ru/posts/">
+    <meta property="og:url" content="https://nldevelop.com/ru/posts/console-tips/">
     <meta property="og:image" content="https://nldevelop.com/images/tn.png">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="https://nldevelop.com/ru/posts/">
+    <meta name="twitter:site" content="https://nldevelop.com/ru/posts/console-tips/">
     <meta name="twitter:image" content="https://nldevelop.com/images/tn.png">
 
-    <base href="https://nldevelop.com/ru/posts/">
+    <base href="https://nldevelop.com/ru/posts/console-tips/">
     <title>
-  Posts - Алексей Буравов
+  Console tips &amp; tricks - Алексей Буравов
 </title>
 
-    <link rel="canonical" href="https://nldevelop.com/ru/posts/">
+    <link rel="canonical" href="https://nldevelop.com/ru/posts/console-tips/">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     
@@ -111,52 +111,54 @@
 
       <div class="content">
         
-  <section class="container list">
-  <h1 class="title">Posts</h1>
-  <ul>
-    
-    <li>
-      <span>August 2, 2021</span><a href="https://nldevelop.com/ru/posts/kiss/">Проще - лучше</a>
-    </li>
-    
-    <li>
-      <span>August 1, 2021</span><a href="https://nldevelop.com/ru/posts/console-tips/">Console tips &amp; tricks</a>
-    </li>
-    
-    <li>
-      <span>April 6, 2021</span><a href="https://nldevelop.com/ru/posts/setup-ssh-postgresql/">Настройка SSH и установка PostgreSQL на VPS</a>
-    </li>
-    
-    <li>
-      <span>March 5, 2021</span><a href="https://nldevelop.com/ru/posts/exams/">Экзамены и срезы в классическом образовании</a>
-    </li>
-    
-    <li>
-      <span>March 4, 2021</span><a href="https://nldevelop.com/ru/posts/setup-elk/">Установка ELK</a>
-    </li>
-    
-    <li>
-      <span>October 12, 2020</span><a href="https://nldevelop.com/ru/posts/elearning/">Будущее платформ онлайн-образования</a>
-    </li>
-    
-    <li>
-      <span>October 11, 2020</span><a href="https://nldevelop.com/ru/posts/human-frontend/">Фронтенд с человеческим лицом</a>
-    </li>
-    
-    <li>
-      <span>October 1, 2020</span><a href="https://nldevelop.com/ru/posts/2fa/">Двухфакторная аутентификация</a>
-    </li>
-    
-  </ul>
+  <section class="container post">
+  <article>
+    <header>
+      <h1 class="title">Console tips &amp; tricks</h1>
+      <h2 class="date">August 1, 2021</h2>
+
+      
+    </header>
+
+    <p>Буду дополнять сюда разные очевидные и не очень консольные команды, которые использую/использовал.</p>
+<h3 id="docker">Docker</h3>
+<p><strong>сборка образа:</strong>  docker build -t user/some.service:latest .<br>
+<strong>push в registry:</strong>  docker push user/some.service:latest<br>
+<strong>pull:</strong>  docker pull user/some.service:latest<br>
+<strong>запуск:</strong>  docker run -d -p 3001:3000 &ndash;restart always &ndash;name some.service user/some.service:latest<br>
+<strong>remove all images:</strong> docker rmi $(docker images -q)</p>
+<h3 id="сборка">Сборка</h3>
+<p><strong>заменить значение в json-файле (предварительно нужно установить утилиту jq):</strong><br>
+contents=&quot;$(jq &lsquo;.Key.Key2 = &ldquo;value&rdquo;&rsquo; file.json)&quot; &amp;&amp; \echo &ldquo;${contents}&rdquo; &gt; file.json</p>
+
+  </article>
+
+  <br/>
+
   
-
-
-
-
-
-
+      <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "nldevelop" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  
+  
 </section>
-
 
       </div>
       
