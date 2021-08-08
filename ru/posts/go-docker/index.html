@@ -241,7 +241,7 @@ docker push &lt;username&gt;/golangweb:latest
 </code></pre></div><p>И теперь в Dockerfile основного проекта остается поменять базовый образ с golang:alpine на свой:</p>
 <div class="highlight"><pre class="chroma"><code class="language-Docker" data-lang="Docker"><span class="k">FROM</span><span class="s"> &lt;username&gt;/golangweb:latest AS builder</span><span class="err">
 </span></code></pre></div><p>Если в базовом образе вдруг не окажется какой-то зависимости (например, вы ее недавно добавили и она специфична для конкретного приложения), то она скачается в процессе сборки.</p>
-<p>Ссылки:</p>
+<h3 id="ссылки">Ссылки:</h3>
 <ul>
 <li><a href="https://github.com/nightlord189/test.mc">Репозиторий с примером микросервиса на Go</a></li>
 <li><a href="https://github.com/nightlord189/golangweb">Репозиторий с базовым образом</a></li>
