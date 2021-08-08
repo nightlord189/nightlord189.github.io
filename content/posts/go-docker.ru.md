@@ -161,7 +161,7 @@ FROM <username>/golangweb:latest AS builder
 
 Если в базовом образе вдруг не окажется какой-то зависимости (например, вы ее недавно добавили и она специфична для конкретного приложения), то она скачается в процессе сборки.
 
-Ссылки:
+### Ссылки:
 + [Репозиторий с примером микросервиса на Go](https://github.com/nightlord189/test.mc)
 + [Репозиторий с базовым образом](https://github.com/nightlord189/golangweb)
 + [Собранный базовый образ на DockerHub](https://hub.docker.com/repository/docker/nightlord189/golangweb)
