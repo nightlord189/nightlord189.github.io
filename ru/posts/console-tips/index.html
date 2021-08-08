@@ -126,7 +126,7 @@
 <strong>push в registry:</strong>  docker push user/some.service:latest<br>
 <strong>pull:</strong>  docker pull user/some.service:latest<br>
 <strong>запуск:</strong>  docker run -d -p 3001:3000 &ndash;restart always &ndash;name some.service user/some.service:latest<br>
-<strong>remove all images:</strong> docker rmi $(docker images -q)</p>
+<strong>remove all images:</strong> docker rmi -f $(docker images -q)</p>
 <h3 id="сборка">Сборка</h3>
 <p><strong>заменить значение в json-файле (предварительно нужно установить утилиту jq):</strong><br>
 contents=&quot;$(jq &lsquo;.Key.Key2 = &ldquo;value&rdquo;&rsquo; file.json)&quot; &amp;&amp; \echo &ldquo;${contents}&rdquo; &gt; file.json</p>
