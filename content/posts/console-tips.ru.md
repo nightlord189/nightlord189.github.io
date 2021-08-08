@@ -16,7 +16,7 @@ description = "пополняемый сборник моих консольны
 **push в registry:**  docker push user/some.service:latest  
 **pull:**  docker pull user/some.service:latest  
 **запуск:**  docker run -d -p 3001:3000 --restart always --name some.service user/some.service:latest  
-**remove all images:** docker rmi $(docker images -q)  
+**remove all images:** docker rmi -f $(docker images -q)  
 
 ### Сборка
 **заменить значение в json-файле (предварительно нужно установить утилиту jq):**  
