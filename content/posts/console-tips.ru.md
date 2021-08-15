@@ -22,4 +22,7 @@ remove all images: docker rmi -f $(docker images -q)
 
 ### Сборка
 заменить значение в json-файле (предварительно нужно установить утилиту jq):  
-c`ontents="$(jq '.Key.Key2 = "value"' file.json)" && \echo "${contents}" > file.json`
+`contents="$(jq '.Key.Key2 = "value"' file.json)" && \echo "${contents}" > file.json`
+
+### SSH
+скопировать ssh-ключ на remote-юзера на сервере: `ssh-copy-id -i ~/.ssh/id_rsa.pub <user>@<host>`
