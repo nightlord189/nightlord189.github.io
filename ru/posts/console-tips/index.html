@@ -131,7 +131,9 @@ remove all images: docker rmi -f $(docker images -q)<br>
 удалить все volume:	<code>docker volume rm $$(docker volume ls -q)</code></p>
 <h3 id="сборка">Сборка</h3>
 <p>заменить значение в json-файле (предварительно нужно установить утилиту jq):<br>
-c<code>ontents=&quot;$(jq '.Key.Key2 = &quot;value&quot;' file.json)&quot; &amp;&amp; \echo &quot;${contents}&quot; &gt; file.json</code></p>
+<code>contents=&quot;$(jq '.Key.Key2 = &quot;value&quot;' file.json)&quot; &amp;&amp; \echo &quot;${contents}&quot; &gt; file.json</code></p>
+<h3 id="ssh">SSH</h3>
+<p>скопировать ssh-ключ на remote-юзера на сервере: <code>ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;user&gt;@&lt;host&gt;</code></p>
 
   </article>
 
