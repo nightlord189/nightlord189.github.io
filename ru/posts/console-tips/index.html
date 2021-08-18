@@ -126,6 +126,7 @@
 push в registry:  <code>docker push user/some.service:latest</code><br>
 pull:  <code>docker pull user/some.service:latest</code><br>
 запуск: <code>docker run -d -p 3001:3000 --restart always --name some.service user/some.service:latest</code><br>
+запуск с bash: <code>docker run --rm -it --entrypoint bash &lt;image&gt;</code><br>
 remove all images: <code>docker rmi -f $(docker images -q)</code><br>
 удалить контейнеры:	<code>docker rm -f $(docker ps -a -q)</code><br>
 удалить все volume:	<code>docker volume rm $(docker volume ls -q)</code></p>

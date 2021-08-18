@@ -39,10 +39,10 @@ Docker сборка образа: docker build -t user/some.service:latest .
 push в registry: docker push user/some.service:latest
 pull: docker pull user/some.service:latest
 запуск: docker run -d -p 3001:3000 --restart always --name some.service user/some.service:latest
+запуск с bash: docker run --rm -it --entrypoint bash &amp;lt;image&amp;gt;
 remove all images: docker rmi -f $(docker images -q)
 удалить контейнеры:	docker rm -f $(docker ps -a -q)
-удалить все volume:	docker volume rm $(docker volume ls -q)
-Сборка заменить значение в json-файле (предварительно нужно установить утилиту jq):</description>
+удалить все volume:	docker volume rm $(docker volume ls -q)</description>
     </item>
     
     <item>
