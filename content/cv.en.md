@@ -8,7 +8,7 @@ draft: false
 [**Halyk Bank**](https://halykbank.kz/)
 + Software developer
 + August 2019 – until now
-+ Backend microservises, processes for managers (deposits, commodity credit), code-review.
++ Backend microservices, processes for managers (deposits, commodity credit), code-review.
 + Golang, Camunda BPM, .NET.Core
 
 [**Samgau**](https://samgau.com/)
