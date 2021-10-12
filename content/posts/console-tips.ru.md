@@ -19,7 +19,8 @@ pull:  `docker pull user/some.service:latest`
 запуск с bash: `docker run --rm -it --entrypoint bash <image>`  
 remove all images: `docker rmi -f $(docker images -q)`  
 удалить контейнеры:	`docker rm -f $(docker ps -a -q)`  
-удалить все volume:	`docker volume rm $(docker volume ls -q)`
+удалить все volume:	`docker volume rm $(docker volume ls -q)`  
+скопировать файл в контейнер: `docker cp <filename> <container>:<filename>`
 
 ### Сборка
 заменить значение в json-файле (предварительно нужно установить утилиту jq):  
