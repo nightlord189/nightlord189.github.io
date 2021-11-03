@@ -130,7 +130,8 @@ pull:  <code>docker pull user/some.service:latest</code><br>
 remove all images: <code>docker rmi -f $(docker images -q)</code><br>
 удалить контейнеры:	<code>docker rm -f $(docker ps -a -q)</code><br>
 удалить все volume:	<code>docker volume rm $(docker volume ls -q)</code><br>
-скопировать файл в контейнер: <code>docker cp &lt;filename&gt; &lt;container&gt;:&lt;filename&gt;</code></p>
+скопировать файл в контейнер: <code>docker cp &lt;filename&gt; &lt;container&gt;:&lt;filename&gt;</code><br>
+подключиться к контейнеру: <code>docker exec -it &lt;container&gt; /bin/bash</code></p>
 <h3 id="сборка">Сборка</h3>
 <p>заменить значение в json-файле (предварительно нужно установить утилиту jq):<br>
 <code>contents=&quot;$(jq '.Key.Key2 = &quot;value&quot;' file.json)&quot; &amp;&amp; \echo &quot;${contents}&quot; &gt; file.json</code></p>
