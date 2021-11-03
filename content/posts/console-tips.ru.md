@@ -20,7 +20,8 @@ pull:  `docker pull user/some.service:latest`
 remove all images: `docker rmi -f $(docker images -q)`  
 удалить контейнеры:	`docker rm -f $(docker ps -a -q)`  
 удалить все volume:	`docker volume rm $(docker volume ls -q)`  
-скопировать файл в контейнер: `docker cp <filename> <container>:<filename>`
+скопировать файл в контейнер: `docker cp <filename> <container>:<filename>`  
+подключиться к контейнеру: `docker exec -it <container> /bin/bash`
 
 ### Сборка
 заменить значение в json-файле (предварительно нужно установить утилиту jq):  
