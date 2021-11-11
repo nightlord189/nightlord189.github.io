@@ -144,7 +144,16 @@ remove all images: <code>docker rmi -f $(docker images -q)</code><br>
 <h3 id="git">Git</h3>
 <p>удалить локальный тег: <code>git tag -d &lt;tag_name&gt;</code><br>
 удалить remote тег: <code>git push --delete origin &lt;tag_name&gt;</code></p>
-
+<h3 id="sql">SQL</h3>
+<p>TRUNCATE всех таблиц в текущей схеме БД:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sql" data-lang="sql"><span class="k">DO</span> <span class="err">$$</span> <span class="k">DECLARE</span>
+    <span class="n">r</span> <span class="n">RECORD</span><span class="p">;</span>
+<span class="k">BEGIN</span>
+    <span class="k">FOR</span> <span class="n">r</span> <span class="k">IN</span> <span class="p">(</span><span class="k">SELECT</span> <span class="n">tablename</span> <span class="k">FROM</span> <span class="n">pg_tables</span> <span class="k">WHERE</span> <span class="n">schemaname</span> <span class="o">=</span> <span class="n">current_schema</span><span class="p">())</span> <span class="n">LOOP</span>
+        <span class="k">EXECUTE</span> <span class="s1">&#39;TRUNCATE TABLE &#39;</span> <span class="o">||</span> <span class="n">quote_ident</span><span class="p">(</span><span class="n">r</span><span class="p">.</span><span class="n">tablename</span><span class="p">)</span> <span class="o">||</span> <span class="s1">&#39; CASCADE&#39;</span><span class="p">;</span>
+    <span class="k">END</span> <span class="n">LOOP</span><span class="p">;</span>
+<span class="k">END</span> <span class="err">$$</span><span class="p">;</span>
+</code></pre></div>
   </article>
 
   <br/>
