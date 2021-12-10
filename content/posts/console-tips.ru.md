@@ -50,3 +50,6 @@ BEGIN
     END LOOP;
 END $$;
 ```
+
+### PowerShell
+вывести переменную окружения: `echo $env:ENV_NAME`
