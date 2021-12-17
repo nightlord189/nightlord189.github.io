@@ -33,7 +33,7 @@ remove all images: `docker rmi -f $(docker images -q)`
 скопировать директорию рекурсивно на удаленный сервер: `scp -pr <file> user1@<host>:<file>`
 
 ### Go
-очистить кэш модулей: `go clean --modcache`
+очистить кэш модулей: `go clean --modcache`  
 прогон тестов во всем проекте рекурсивно: `go test ./...`
 
 ### Git
