@@ -140,7 +140,8 @@ remove all images: <code>docker rmi -f $(docker images -q)</code><br>
 скопировать файл на удаленный сервер: <code>scp &lt;file&gt; user1@&lt;host&gt;:&lt;file&gt;</code><br>
 скопировать директорию рекурсивно на удаленный сервер: <code>scp -pr &lt;file&gt; user1@&lt;host&gt;:&lt;file&gt;</code></p>
 <h3 id="go">Go</h3>
-<p>очистить кэш модулей: <code>go clean --modcache</code></p>
+<p>очистить кэш модулей: <code>go clean --modcache</code>
+прогон тестов во всем проекте рекурсивно: <code>go test ./...</code></p>
 <h3 id="git">Git</h3>
 <p>удалить локальный тег: <code>git tag -d &lt;tag_name&gt;</code><br>
 удалить remote тег: <code>git push --delete origin &lt;tag_name&gt;</code></p>
