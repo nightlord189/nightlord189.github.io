@@ -34,6 +34,7 @@ remove all images: `docker rmi -f $(docker images -q)`
 
 ### Go
 очистить кэш модулей: `go clean --modcache`
+прогон тестов во всем проекте рекурсивно: `go test ./...`
 
 ### Git
 удалить локальный тег: `git tag -d <tag_name>`  
