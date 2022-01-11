@@ -137,8 +137,9 @@ remove all images: <code>docker rmi -f $(docker images -q)</code><br>
 <code>contents=&quot;$(jq '.Key.Key2 = &quot;value&quot;' file.json)&quot; &amp;&amp; \echo &quot;${contents}&quot; &gt; file.json</code></p>
 <h3 id="ssh">SSH</h3>
 <p>скопировать ssh-ключ на remote-юзера на сервере: <code>ssh-copy-id -i ~/.ssh/id_rsa.pub &lt;user&gt;@&lt;host&gt;</code><br>
-скопировать файл на удаленный сервер: <code>scp &lt;file&gt; user1@&lt;host&gt;:&lt;file&gt;</code><br>
-скопировать директорию рекурсивно на удаленный сервер: <code>scp -pr &lt;file&gt; user1@&lt;host&gt;:&lt;file&gt;</code></p>
+скопировать файл на удаленный сервер: <code>scp &lt;file&gt; &lt;user&gt;@&lt;host&gt;:&lt;file&gt;</code><br>
+скопировать директорию рекурсивно на удаленный сервер: <code>scp -pr &lt;file&gt; user1@&lt;host&gt;:&lt;file&gt;</code><br>
+скопировать файл с удаленного сервера: <code>scp &lt;user&gt;@&lt;host&gt;:&lt;file&gt; &lt;local_path&gt;</code></p>
 <h3 id="go">Go</h3>
 <p>очистить кэш модулей: <code>go clean --modcache</code><br>
 прогон тестов во всем проекте рекурсивно: <code>go test ./...</code></p>
