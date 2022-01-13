@@ -55,3 +55,6 @@ END $$;
 
 ### PowerShell
 вывести переменную окружения: `echo $env:ENV_NAME`
+
+### Конфиги и пути:
+конфиг OpenVPN-Server: `/etc/openvpn/server/server.conf`. 
