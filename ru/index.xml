@@ -6,7 +6,19 @@
     <description>Recent content on Алексей Буравов</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
-    <lastBuildDate>Sun, 08 Aug 2021 19:23:14 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 28 Feb 2022 02:31:26 +0600</lastBuildDate><atom:link href="https://nldevelop.com/ru/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Одобрение, кредиты и регулирование</title>
+      <link>https://nldevelop.com/ru/posts/credit-approval/</link>
+      <pubDate>Mon, 28 Feb 2022 02:31:26 +0600</pubDate>
+      
+      <guid>https://nldevelop.com/ru/posts/credit-approval/</guid>
+      <description>Хотел бы высказать тут пару мыслей о кредитной сфере.
+Дисклеймер: я буду говорить только на основе собственных наблюдений во время жизни и работы в Казахстане. Вполне вероятно, то, о чем я говорю, уже давно где-то реализовано.
+Предварительное одобрение Я регулярно сталкиваюсь в своей жизни с таким термином как &amp;ldquo;предварительное одобрение&amp;rdquo;. Например, вы клиент банка А. И однажды вам приходит смс (или звонит менеджер) от банка с примерно таким текстом:
+ Уважаемый {CLIENT_NAME}!</description>
+    </item>
+    
     <item>
       <title>Сборка Golang-приложения в Docker</title>
       <link>https://nldevelop.com/ru/posts/go-docker/</link>
