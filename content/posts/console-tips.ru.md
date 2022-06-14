@@ -31,7 +31,7 @@ remove all images: `docker rmi -f $(docker images -q)`
 скопировать ssh-ключ на remote-юзера на сервере: `ssh-copy-id -i ~/.ssh/id_rsa.pub <user>@<host>`  
 скопировать файл на удаленный сервер: `scp <file> <user>@<host>:<file>`  
 скопировать директорию рекурсивно на удаленный сервер: `scp -pr <file> user1@<host>:<file>`  
-скопировать файл с удаленного сервера: `scp <user>@<host>:<file> <local_path>`
+скопировать файл с удаленного сервера: `scp <user>@<host>:<file> <local_path>`  
 узнать инфу для known_hosts: `ssh-keyscan <host>`
 
 ### Go
