@@ -160,7 +160,20 @@ remove all images: <code>docker rmi -f $(docker images -q)</code><br>
 <p>вывести переменную окружения: <code>echo $env:ENV_NAME</code></p>
 <h3 id="конфиги-и-пути">Конфиги и пути:</h3>
 <p>конфиг OpenVPN-Server: <code>/etc/openvpn/server/server.conf</code>.</p>
+<h3 id="gitlab-ci">Gitlab CI</h3>
+<p>Очистка volume, image, containers на раннере:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fallback" data-lang="fallback"># Remove exited containers
+docker ps -a -q -f status=exited | xargs --no-run-if-empty docker rm -v
 
+# Remove dangling images
+docker images -f &#34;dangling=true&#34; -q | xargs --no-run-if-empty docker rmi
+
+# Remove unused images
+docker images | awk &#39;/ago/  { print $3}&#39; | xargs --no-run-if-empty docker rmi
+
+# Remove dangling volumes
+docker volume ls -qf dangling=true | xargs --no-run-if-empty docker volume rm
+</code></pre></div>
   </article>
 
   <br/>
