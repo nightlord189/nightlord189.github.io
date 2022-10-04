@@ -5,10 +5,19 @@ draft: false
 ---
 
 ### Work experience
+[**TalentTech**](https://talenttech.ru/)
++ Software developer
++ December 2021 – until now
++ Backend development of Onboarding (SNAMI) project.
++ Golang, PostgreSQL.
+
 [**Halyk Bank**](https://halykbank.kz/)
 + Software developer
-+ August 2019 – until now
-+ Backend microservices, processes for managers (deposits, commodity credit), code-review.
++ August 2019 – December 2021
++ Developed microservices on Go (Gin, GORM) and C# with PostgreSQL and Redis.
++ Working with open-source BPM-engine Camunda, creating bpmn-schemes, writing node scripts on JavaScripts, releasing new schemes, fixing bugs.
++ Design and development of BPM-project - United Non Credit. Successfully finished integration with National Pension Fund (ENPF) on project to allow withdrawal from the fund for housing purposes of clients.
++ Participating in code-review, learning project between Halyk Bank and IITU university.
 + Golang, Camunda BPM, .NET.Core
 
 [**Samgau**](https://samgau.com/)
