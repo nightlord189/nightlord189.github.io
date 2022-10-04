@@ -22,9 +22,9 @@
       <pubDate>Thu, 01 Oct 2020 09:07:52 +0600</pubDate>
       
       <guid>https://nldevelop.com/en/cv/</guid>
-      <description>Work experience Halyk Bank
- Software developer August 2019 – until now Backend microservices, processes for managers (deposits, commodity credit), code-review. Golang, Camunda BPM, .NET.Core  Samgau
- Software developer April 2019 – July 2019 Participated in the development and support of the Almaty-KSK portal for the integration of residents, KSK and city administration into a single system. Worked on OpenVote portal. Developed Telegram bots for integration with Almaty-KSK. .NET.Core, PostgreSQL, Telegram API  SoftLink</description>
+      <description>Work experience TalentTech
+ Software developer December 2021 – until now Backend development of Onboarding (SNAMI) project. Golang, PostgreSQL.  Halyk Bank
+ Software developer August 2019 – December 2021 Developed microservices on Go (Gin, GORM) and C# with PostgreSQL and Redis. Working with open-source BPM-engine Camunda, creating bpmn-schemes, writing node scripts on JavaScripts, releasing new schemes, fixing bugs. Design and development of BPM-project - United Non Credit. Successfully finished integration with National Pension Fund (ENPF) on project to allow withdrawal from the fund for housing purposes of clients.</description>
     </item>
     
     <item>
